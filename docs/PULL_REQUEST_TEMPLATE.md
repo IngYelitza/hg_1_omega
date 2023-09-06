@@ -4,7 +4,6 @@
 - [ ] Charlie
 - [ ] Delta
 - [ ] Echo
-- [ ] Omega
 
 # Seleccione el tipo de actividad
 - [ ] Feature
