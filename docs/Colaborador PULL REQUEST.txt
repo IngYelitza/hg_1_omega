@@ -1,0 +1,47 @@
+CREANDO REPO ADMIN
+1.-Creamos el repo
+2.-Creamos la rama develop
+3.-Creamos el directorio o carpeta docs dentro de la rama develop y luego agregamos el template.
+
+
+Hacemos el fork en github colaborador
+Luego...
+
+CLONANDO REPO A NUESTRO LOCAL ...
+1.- Creamos un directorio cualquiera en cualquier ubicación y lo abrimos en vscode.
+2.- Una vez dentro de ese directorio o carpeta desde git bash en el vscode ejecutamos => git clone ruta_de_nuestro_origin
+4.- Nos posicionamos dentro de la carpeta del repo clonado => cd nombre_de_la_carpeta
+5.- Ejecutamos => git remote -v observamos que ya tenemos registrado nuestro origin (el registro lo hace directamente el clone)
+6.- Ejecutamos => git remote add upstream ruta_del_main  (esto para apuntar también al repo del admin)
+7.- Ejecutamos => git remote -v observamos que ya tenemos registrado el upstream también
+
+CREANDO LA TAREA ...
+1.-  Creamos nuestra rama feature/alias => git branch feature/alias 
+2.-  Nos cambiamos a la nueva rama => git switch feature/alias
+3.-  Creamos el archivo => touch alias.txt
+4.-  git status (El archivo debe estar en el área de trabajo workspace)
+5.-  Agregamos el file al stage => git add .
+6.-  Hacemos el commit => git commit -m "feature(new) alias.txt"
+7.-  Hacemos push a nuestro origen desde la rama que contiene la tarea => git push origin rama_de_la_tarea
+9.-  En nuestro github observamos que existe un push y vemos el botón de Compare & pull request => Click en Compare & pull request
+10.- Revisamos las ramas de derecha a izquirda, en la parte izquierda esta la rama del admin allí debemos seleccionar la Develop
+11.- Creamos la solicitud => Click en Create pull request
+12.- Seleccionamos las opciones de usuario y actividad en el template
+13.- Luego => click en Marge pull request
+14.- Click confirm pull request 
+
+ACEPTACIÓN DEL ADMINISTRADOR ...
+1.- El admin recibe solicitud de pull request y chequea si está en la rama correcta
+2.- El admin acepta el pull request y autoriza y confirma merge hacia la rama develop
+3.- En la rama develop debe estar la tarea
+4.- El admin actualiza el main creando auto pull request desde la rama develop hasta la rama main ó master 
+5.- Selecciona Contribute => open pull request(seleccionar opciones del template) => crear pull request => merge pull request => confirm merge
+***Ya debería haberse actualizado la rama del main
+
+ACTUALIZANDO REPO LOCAL
+1.- Verificar que estamos en la rama main ó master
+2.- Descargamos el repo del admin a nuestro local => git fetch upstream
+3.- Hacemos el merge con nuestro main ó master => git marge upstream/main
+4.- Actualizamos nuestro origin => git push.
+
+
