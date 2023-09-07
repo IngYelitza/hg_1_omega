@@ -41,7 +41,7 @@ ACEPTACIÓN DEL ADMINISTRADOR ...
 ACTUALIZANDO REPO LOCAL
 1.- Verificar que estamos en la rama main ó master
 2.- Descargamos el repo del admin a nuestro local => git fetch upstream
-3.- Hacemos el merge con nuestro main ó master => git marge upstream/main
+3.- Hacemos el merge con nuestro main ó master => git merge upstream/main
 4.- Actualizamos nuestro origin => git push.
 
 
